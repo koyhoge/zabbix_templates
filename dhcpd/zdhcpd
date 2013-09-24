@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# run periodical and write current status to the file
+
+STATCMD=/usr/local/bin/dhcpd-pool
+OUTPUT_FILE=/tmp/dhcpd.stats
+
+${STATCMD} > ${OUTPUT_FILE}
+

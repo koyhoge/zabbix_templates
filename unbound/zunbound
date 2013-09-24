@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# run periodical and write current status to the file
+
+STATCMD='/usr/local/sbin/unbound-control stats'
+OUTPUT_FILE=/tmp/unbound.stats
+
+${STATCMD} > ${OUTPUT_FILE}
